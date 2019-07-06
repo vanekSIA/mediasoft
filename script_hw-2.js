@@ -4,28 +4,28 @@ function speech() {
 
 
 while (operation != 0) {
-    var operation = prompt("Êàêîå äåéñòâèå âû õîòèòå âûïîëíèòü?\n1: Ñëîæåíèå\n2: Âû÷èòàíèå\n3: Óìíîæåíèå\n4: Äåëåíèå\n5: Âîçâåäåíèå â ñòåïåíü\n6: Êâàäðàòíûé êîðåíü èç\n0: Âûõîä ");
+    var operation = prompt("Какое действие вы хотите выполнить?\n1: Сложение\n2: Вычитание\n3: Умножение\n4: Деление\n5: Возведение в степень\n6: Квадратный корень из\n0: Выход ");
 
     if (operation > 0 && operation < 6) {
 
-        let num1 = parseInt(prompt("Ââåäèòå ïåðâîå ÷èñëî.", ""));
+        let num1 = parseInt(prompt("Введите первое число.", ""));
 
-        let num2 = parseInt(prompt("Ââåäèòå âòîðîå ÷èñëî.", ""));
+        let num2 = parseInt(prompt("Введите второе число.", ""));
 
 
-        if (operation == 1) alert("Ñóììà ðàâíà " + (num1 + num2));
+        if (operation == 1) alert("Сумма равна " + (num1 + num2));
 
-        if (operation == 2) alert("Ðàçíîñòü ðàâíà " + (num1 - num2));
+        if (operation == 2) alert("Разность равна " + (num1 - num2));
 
-        if (operation == 3) alert("Ïðîèçâåäåíèå ðàâíî " + (num1 * num2));
+        if (operation == 3) alert("Произведение равно " + (num1 * num2));
 
-        if (operation == 4) alert("Ðåçóëüòàò äåëåíèÿ " + (num1 / num2));
+        if (operation == 4) alert("Результат деления " + (num1 / num2));
 
-        if (operation == 5) alert("Ðåçóëüòàò âîçâåäåíèÿ â ñòåïåíü " + (num1 ** num2));
+        if (operation == 5) alert("Результат возведения в степень " + (num1 ** num2));
 
     } else if (operation == 6) {
-        let num3 = parseInt(prompt("Ââåäèòå ÷èñëî.", ""))
-        alert("Êâàäðàòíûé êîðåíü ðàâåí " + Math.sqrt(num3))
+        let num3 = parseInt(prompt("Введите число.", ""))
+        alert("Квадратный корень равен " + Math.sqrt(num3))
 
     } else if (operation != 0) speech()
 }
